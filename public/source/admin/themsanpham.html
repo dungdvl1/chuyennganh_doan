@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="themsanpham.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#">Quản Lý Bán Hàng</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng Nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="left col-md-2">
+                        <div class="title"><span>Bảng Điều Khiển</span></div>
+                        <ul>
+                            <li class="link-nav"><a href="#">Sản Phẩm</a></li>
+                            <li class="link-nav"><a href="#">Bán Hàng</a></li>
+                            <li class="link-nav"><a href="#">Báo Giá</a></li>
+                            <li class="link-nav"><a href="#">Nhập Hàng</a></li>
+                            <li class="link-nav"><a href="#">SP Đổi Trả</a></li>
+                            <li class="link-nav"><a href="#">Khách Hàng</a></li>
+                            <li class="link-nav"><a href="#">Cài đặt</a></li>
+                            <li class="link-nav"><a href="#">Báo Cáo</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="right col-md-10">
+
+                        <div class="header">
+                            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                                <a class="navbar-brand" href="#"><span>Bảng Điều Khiển</span></a>
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                        <li class="nav-item active">
+                                            Đăng nhập gần đây: <span>22/8/2019 03:19</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="content-main">
+                            <div class="button-themSP">
+                                <span>Chức Năng Thêm</span>
+                                <span><a href="admin.html">Back</a></span>
+                            </div>
+
+                            <!-- Start Add sanPham -->
+                            <div class="bangthemsanpham">
+
+
+                                <table>
+
+                                    <tr class="title">
+                                        <td colspan="2">Bảng thêm sản phẩm</td>
+                                    </tr>
+                                    <tr class="loaisanpham _1hang">
+                                        <td><span>Loại Sản Phẩm :</span></td>
+                                        <td><select name="loaisp" id="loaisp">
+                                                <option value="laptop">Laptop</option>
+                                                <option value="dienthoai">Điện Thoại</option>
+                                                <option value="maytinhbang">Máy Tính Bảng</option>
+                                            </select></td>
+                                    </tr>
+
+                                    <tr class="tensanpham _1hang">
+                                        <td><span>Tên Sản Phẩm :</span></td>
+                                        <td><input type="text" name="tensanpham" id="tensanpham"></td>
+                                    </tr>
+                                    <tr class="thuonghieu _1hang">
+                                        <td><span>Thương Hiệu :</span></td>
+                                        <td><select name="thuonghieu" id="thuonghieu">
+                                                <option value="samsung">Sam Sung</option>
+                                                <option value="oppo">Oppo</option>
+                                                <option value="iPhone">iPhone</option>
+                                                <option value="dell">Sam Sung</option>
+                                                <option value="hp">HP</option>
+                                                <option value="Asus">Asus</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr class="hinhanh _1hang">
+                                        <td><span>Hình Ảnh :</span></td>
+                                        <td> <input type="file" name="hinhanh" id="hinhanh"></td>
+                                    </tr>
+                                    <tr class="giaban _1hang">
+                                        <td><span>Giá Bán :</span></td>
+                                        <td><input type="text" name="giaban" id="giaban"></td>
+                                    </tr>
+                                    <tr class="mausac _1hang">
+                                        <td><span>Màu Sắc :</span></td>
+                                        <td><input type="text" name="mausac" id="mausac"></td>
+                                    </tr>
+                                </table>
+
+                                <div class="button">
+                                    <button>Thêm Sản phẩm</button>
+                                    <button>Reset</button>
+                                </div>
+
+
+                            </div>
+                            <!-- End Add sanPham -->
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

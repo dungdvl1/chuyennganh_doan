@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.style-blur {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.style-blur .poster-landscape-film {
+    filter: blur(15px);
+    margin: -11px 0 -5px -10px;
+    width: calc(100% + 5px);
+}
+
+.style-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(to top, rgb(10, 32, 41), transparent 100%);
+}
+
+.detail-main-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.poster-main {
+    position: relative;
+    width: 100%;
+}
+
+.poster-main:hover .button-play {
+    opacity: 1;
+    visibility: visible;
+}
+
+.button-play {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    animation: 0.4s;
+}
+
+.button-play:hover img {
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px #4f4343;
+}
+
+.info-main {
+    margin-top: 60px;
+    color: #fff;
+}
+
+.info-main .ngay {
+    font-size: 13px;
+}
+
+.info-main .title-detail {
+    font-size: 24px;
+}
+
+.info-main .tuoi {
+    margin-right: 6px;
+    margin-top: 6px;
+    background-color: #fb4226;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 0 5px;
+    display: inline-block;
+    text-align: center;
+    min-width: 33px;
+}
+
+.info-main .info1 {
+    color: #e9e9e9;
+    font-size: 14px;
+}
+
+.info-main .title-detail button {
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    background: 0 0;
+    padding: 7px 25px;
+    transition: all 0.2s;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #fb4226;
+    border: none;
+    color: #fff;
+}
+
+.info-main .title-detail button:hover {
+    background-color: #b42a14;
+}
+
+.danhgia {
+    margin-top: 40px;
+}
+
+.c100 {
+    position: relative;
+    font-size: 126px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.circleBorder {
+    width: 1em;
+    height: 1em;
+    background: 0 0;
+    border: 7.5px solid #3a3a3a;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+}
+
+.c100 > span {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    line-height: 2.4em;
+    font-size: 0.42em;
+    color: #fff;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.star {
+    margin: 5px -10px 5px 20px;
+}
+
+.star img {
+    width: 17px;
+    height: 17px;
+}
+
+.sodanhgia {
+    font-size: 14px;
+    color: #e9e9e9;
+    margin: 0 0 0 20px;
+}
+
+.info-detail,
+.gioithieu {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.box_chon_xuatchieu {
+    margin-top: 20px;
+    height: 100px;
+    color: rgb(234, 5, 5);
+}
+
+.lich_chieu {
+    font-size: 22px;
+    color: #f11f1f;
+    font-weight: 600;
+}
+
+.info_lichchieu {
+    padding-left: 130px !important;
+    margin-top: 20px;
+}
+
+.ngay_chieu {
+    color: #ffffff;
+}
+
+.gio_chieu {
+    margin-top: 10px;
+}
+
+.gio_chieu a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(126, 66, 66);
+    background-color: #fa5238;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.gio_chieu a:hover {
+    background-color: #b55141;
+}
+
+.dang_phim {
+    margin-top: 10px;
+    padding-right: 130px;
+    margin-top: 20px;
+}
+
+.dang_phim span {
+    background-color: #e2d3d3;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+.video-box {
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    box-shadow: 0 0 14px 15px rgb(221, 203, 203);
+}
+.video {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}

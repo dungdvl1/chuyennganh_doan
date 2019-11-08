@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+
+    .wapper {
+        width: 100%;
+        height: 100%;
+
+        // start video-box
+
+        .video-box {
+            display: none;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 20;
+            box-shadow: 0 0 14px 15px rgb(221, 203, 203);
+
+            .video {
+                width: 60%;
+                height: 70%;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                // end video
+                .button-close {
+                    position: absolute;
+                    top: -18px;
+                    right: -18px;
+                    box-shadow: 0 0 5px 2px rgb(221, 203, 203);
+                    border-radius: 50%;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    i {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 18px;
+                        line-height: 40px;
+                        color: #fff;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        // end video-box
+
+        .video-box.active {
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 22;
+        }
+
+        // end video-box active
+
+        .slide {
+            width: 100%;
+            height: 89vh !important;
+            position: relative;
+
+            .bd-example {
+                height: 100%;
+                position: relative;
+
+                .carousel-control-prev-icon {
+                    position: absolute;
+                    left: 50px;
+                }
+
+                .carousel-control-next-icon {
+                    position: absolute;
+                    right: 50px;
+                }
+
+                .carousel-inner {
+                    height: 100%;
+                    position: relative;
+
+                    .carousel-item {
+                        height: 100%;
+
+                        &:hover {
+                            .button-play {
+                                visibility: visible;
+                            }
+                        }
+
+                        .button-play {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            visibility: hidden;
+
+                            &:hover {
+                                img {
+                                    background: rgba(0, 0, 0, 0.3);
+                                    border-radius: 50%;
+                                    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+
+                // end carousel item
+            }
+        }
+
+        // end slide
+
+        .muavengay {
+            height: 100px;
+            margin-top: 50px;
+
+            .dropdown {
+                box-shadow: 0 0 10px 3px #dddddd;
+                width: 600px;
+                height: 60px;
+                line-height: 50px;
+                padding: 3px 10px;
+                border-radius: 5px;
+                margin: 0 auto;
+
+                .button-muave {
+                    float: right;
+
+                    .btn {
+                        background-color: #5dbe3c;
+
+                        &:hover {
+                            background-color: #469d29;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                // end button muave
+            }
+
+            // end dropdown
+        }
+
+        // end muavengay
+
+        .list {
+            height: 500px;
+
+            .title {
+                .active {
+                    font-size: 24px;
+                    color: #fa5238;
+                    margin-top: 50px;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: #333333;
+                    font-weight: 600;
+                    transition: 0.3s;
+
+                    &:hover {
+                        font-size: 24px;
+                    }
+
+                    &:first-child {
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            // end title list
+
+            .list-film {
+                margin-top: 50px;
+
+                .khoifilm {
+                    position: relative;
+                    margin-bottom: 20px;
+
+                    // border: 1px solid #ccc;
+                    &:hover {
+                        .img {
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            .man {
+                                background: -webkit-linear-gradient(to top,
+                                        #000,
+                                        transparent 100%);
+                                background: -o-linear-gradient(to top, #000, transparent 100%);
+                                background: -moz-linear-gradient(to top,
+                                        #000,
+                                        transparent 100%);
+                                background: linear-gradient(to top, #000, transparent 100%);
+                            }
+                        }
+
+                        .button-play {
+                            img {
+                                visibility: visible;
+                            }
+                        }
+
+                        .button-muave {
+                            a {
+                                visibility: visible;
+                            }
+                        }
+
+                        .title-film {
+                            visibility: hidden;
+                        }
+
+                        .button-play {
+                            z-index: 5;
+                        }
+                    }
+
+                    // hover khoifilm
+
+                    .img {
+                        width: 255px;
+                        height: 380px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 4px;
+                        }
+
+                        // end img
+                        .man {
+                            width: 90%;
+                            height: 81%;
+                            border-radius: 4px;
+                            position: absolute;
+                            z-index: 2;
+                        }
+
+                        // end man
+                    }
+
+                    .title-film {
+                        h6 {
+                            margin-top: 10px;
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #000;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            color: #4a4a4a;
+                        }
+                    }
+
+                    // end titlefilm
+
+                    .button-play {
+                        position: absolute;
+                        top: 37%;
+                        left: 42%;
+
+                        img {
+                            width: 48px;
+                            height: 48px;
+                            cursor: pointer;
+                            visibility: hidden;
+
+                            &:hover {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+
+                    // end button play
+
+                    .button-muave {
+                        a {
+                            visibility: hidden;
+                            position: absolute;
+                            bottom: 30px;
+                            left: 15px;
+                            display: block;
+                            width: 90%;
+                            border-radius: 4px;
+                            color: #fff;
+                            font-size: 18px !important;
+                            padding: 10px;
+                            text-align: center;
+                            background: #fb4226;
+                            background: -webkit-linear-gradient(to left,
+                                    #fb4226,
+                                    #ce3017 100%);
+                            background: -o-linear-gradient(to left, #fb4226, #ce3017 100%);
+                            background: -moz-linear-gradient(to left, #fb4226, #ce3017 100%);
+                            background: linear-gradient(to left, #fb4226, #ce3017 100%);
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+
+                    // end button muave
+                }
+
+                // end khoi film
+            }
+
+            // end listfilm
+        }
+
+        // end list
+
+        .tintuc {
+            .title {
+                margin-top: 50px;
+
+                a {
+                    margin-right: 30px;
+                }
+            }
+
+            .khoitintuc {
+                margin-top: 50px;
+
+                img {
+                    width: 550px;
+                    height: 300px;
+                }
+            }
+
+            .khoitintucduoi {
+                margin-top: 30px;
+
+                img {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+        }
+
+        .button-xemthem {
+            margin-top: 40px;
+
+            a {
+                &:hover {
+                    background-color: #469d29;
+                    color: #fff;
+                }
+            }
+        }
+
+        .list-cinema {
+            margin-top: 150px;
+
+            .row {
+                border: 1px solid rgba(238, 238, 238, 0.88);
+                border-radius: 5px 0px 0px 5px;
+                margin: 0px;
+                padding: 0px;
+
+                .hethongrap {
+                    padding: 0px;
+                    margin: 0px;
+
+                    ul {
+                        padding: 0px 0px 150px 0px;
+                        margin: 0px;
+                        width: 150px;
+                        border-right: 1px solid rgba(238, 238, 238, 0.88);
+
+                        .active {
+                            opacity: 1;
+
+                            img {
+                                opacity: 1;
+                            }
+                        }
+
+                        li {
+                            &:hover {
+                                opacity: 1;
+                                cursor: pointer;
+
+                                img {
+                                    opacity: 1;
+                                }
+                            }
+
+                            opacity: 0.6;
+                            padding: 20px 0px;
+                            list-style: none;
+                            text-align: center;
+
+                            a {
+                                padding: 20px;
+                                position: relative;
+                                transition: all 0.2s;
+
+                                img {
+                                    width: 50px;
+                                    height: 50px;
+                                    opacity: 0.6;
+                                }
+
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -18px;
+                                    left: 50%;
+                                    width: calc(100% - 20px);
+                                    transform: translateX(-50%);
+                                    border-bottom: 1px solid #fff;
+                                    border-color: rgba(238, 238, 238, 0.88);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // end hethongrap
+                .rap {
+                    .wrapcinema {
+                        display: inline-block;
+                        padding-top: 20px;
+
+                        ._1cinema.active {
+                            opacity: 1;
+                        }
+
+                        ._1cinema {
+                            &:hover {
+                                opacity: 1;
+                                cursor: pointer;
+                            }
+
+                            transition: 0.3s;
+                            display: inline-block;
+                            position: relative;
+                            margin-bottom: 30px;
+                            opacity: 0.6;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: 50%;
+                                bottom: -15px;
+                                width: 100%;
+                                transform: translateX(-50%);
+                                border-bottom: 1px solid #fff;
+                                border-color: rgba(238, 238, 238, 0.88);
+                            }
+
+                            .hinh {
+                                width: 60px;
+                                height: 60px;
+                                float: left;
+                                margin-right: 10px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .content {
+                                float: left;
+
+                                .title {
+                                    color: #8bc541;
+                                }
+
+                                .diachi {
+                                    font-weight: 600;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    color: #949494;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    margin: 0;
+                                }
+
+                                a {
+                                    color: #fb4226 !important;
+                                    font-size: 12px;
+
+                                    &:hover {
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // end rap
+
+                .danh-sach-film {
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+
+                    // start list_film
+                    .film {
+                        width: 100%;
+                        display: inline-block;
+                        margin: 20px 0px;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            bottom: -15px;
+                            width: 100%;
+                            -webkit-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                            border-bottom: 1px solid #fff;
+                            border-color: rgba(238, 238, 238, 0.88);
+                        }
+
+                        .title-top {
+                            width: 100%;
+                            height: 60px;
+                            transition: all 0.4s ease-in-out;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            .image {
+                                float: left;
+                                width: 60px;
+                                height: 60px;
+                                margin-right: 20px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            // end image
+                            .title-film {
+                                float: left;
+
+                                h6 {
+                                    font-size: 16px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    color: #949494;
+                                }
+                            }
+
+                            // end title-film
+                        }
+
+                        .clr {
+                            clear: both;
+                        }
+
+                        .title-below {
+                            margin-top: 15px;
+                            display: flex;
+                            height: 20px;
+                            transition: all 0.4s ease-in-out;
+
+                            .loai {
+                                margin-left: 15px;
+                                float: left;
+                                width: 30px;
+                                height: 30px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .thoi-gian-chieu {
+                                margin-left: 40px;
+                                float: left;
+
+                                // align-items: center;
+                                span {
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    margin: 0 5px;
+
+                                    a {
+                                        color: red;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // end list cinema
+
+        // start footer
+
+        footer {
+            margin-top: 100px;
+            background-color: #222;
+            width: 100%;
+
+            .footer {
+                width: 100%;
+                padding-top: 30px;
+
+                // start title
+                .title {
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    text-align: center;
+                    color: #fff;
+                }
+
+                // end title
+
+                // start thongtin ul li
+
+                .thongtin {
+                    ul {
+                        margin-top: 40px;
+
+                        li {
+                            a {
+                                list-style: none;
+                                color: #949494;
+
+                                &:hover {
+                                    color: #fff;
+                                    cursor: pointer;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // end thongtin ul li
+
+                // start list cinema , logo mobile app, logo social
+
+                .list-cinema {
+                    margin: 0;
+
+                    ul {
+                        display: inline-block;
+                        width: 300px;
+                        margin-top: 15px;
+
+                        li {
+                            float: left;
+                            list-style: none;
+                            margin: 10px;
+
+                            img {
+                                border-radius: 50%;
+                                width: 30px;
+                                height: 30px;
+                                animation: 0.4s;
+
+                                &:hover {
+                                    opacity: 0.7;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // end list cinema , logo mobile app, logo social
+            }
+
+            .hrfooter {
+                border: 1px solid #4a4a4a;
+                margin: 0;
+            }
+
+            // end hrfooter
+
+            // gioithieu
+
+            .gioithieu {
+                text-align: center;
+                padding: 20px 0 0 0;
+                color: #949494;
+
+                h6 {
+                    color: #fff;
+                }
+            }
+
+            // end gioithieu
+        }
+
+        // end footer
+    }
+}

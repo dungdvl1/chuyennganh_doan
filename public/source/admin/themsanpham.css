@@ -1,0 +1,53 @@
+.content-main .bangthemsanpham {
+  padding: 40px !important;
+  margin-top: 20px !important;
+  width: 100%;
+  min-height: 500px;
+  box-shadow: 0 0 10px 12px #ccc;
+}
+
+table {
+  width: 50%;
+}
+
+table .title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+table .title td {
+  text-align: center !important;
+}
+
+table td:first-child {
+  text-align: right;
+}
+
+table td:nth-child(2) {
+  padding-left: 30px !important;
+}
+
+._1hang {
+  font-size: 16px;
+  height: 50px;
+}
+
+.button {
+  margin-left: 50px !important;
+  margin-top: 30px !important;
+}
+
+.button button {
+  background-color: #59b210;
+  border: none;
+  width: 150px;
+  height: 35px;
+  color: #fff;
+  border-radius: 7px;
+  margin-right: 20px !important;
+}
+
+.button button:hover {
+  color: aqua;
+  box-shadow: 0 0 12px 0px #59b210;
+}
