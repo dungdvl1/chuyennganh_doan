@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 use App\phim;
 use App\slide;
-
+use App\ghe;
+use App\hang_ghe;
+use App\ghe_chon;
+use App\suatchieu;
+use App\giochieu;
 
 class PageController extends Controller
 {
@@ -24,8 +28,19 @@ class PageController extends Controller
         return view("page.trangchu",compact('phim','slide'));
     }
 
-    public function getPhim(){
-        return view('page.chitietphim');
+    public function getPhim($id){
+        $phim = phim::where('id_phim',$id)->first();
+
+        $suatchieu = suatchieu::where('id_phim',$id)->get();
+
+        $id=array();
+        foreach ($suatchieu as $key => $value) {
+            $id[]=$value->id_suatchieu;
+        }
+
+        $giochieu=giochieu::get();
+        
+        return view('page.chitietphim',\compact('phim','suatchieu','id','giochieu'));
     }
 
     public function checkout(){
@@ -33,7 +48,11 @@ class PageController extends Controller
     }
 
     public function chonghe(){
-        return view('page.chonghe');
+
+        $hang = hang_ghe::all();
+        $soghe=ghe::all();
+
+        return view('page.chonghe',\compact('hang','soghe'));
     }
 
 }

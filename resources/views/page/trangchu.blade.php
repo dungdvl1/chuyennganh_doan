@@ -88,7 +88,7 @@
 
     <div class="container">
         <!-- start title -->
-        <div class="title text-center">
+        <div class="title text-center" style="padding-top: 50px;">
             <a href="#" class="active">Đang Chiếu</a>
             <a href="#">Sắp Chiếu</a>
         </div>
@@ -126,7 +126,7 @@
 
                     <!-- end button view video-box -->
                     <div class="button-muave">
-                        <a href="http://localhost/project/public/chi-tiet-phim?idphim={{$val->id_phim}}">Mua vé</a>
+                        <a href="http://localhost/project/public/chi-tiet-phim/{{$val->id_phim}}">Mua vé</a>
                     </div>
                 </div>
 

@@ -18,6 +18,11 @@ class ghe extends Model
     {
         return $this->hasOne('App\ve');
     }
+
+    public function ghe_chon()
+    {
+        return $this->hasMany('App\ghe_chon', 'id_ghechon', 'id_ghe');
+    }
     
 
 }

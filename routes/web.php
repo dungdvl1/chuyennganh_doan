@@ -20,7 +20,7 @@ Route::get('index',[
     'uses' => 'PageController@getIndex'
 ]);
 
-Route::get('chi-tiet-phim', [
+Route::get('chi-tiet-phim/{id}', [
     'as' => 'chitietphim',
     'uses' => 'PageController@getPhim'      
 ]);

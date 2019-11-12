@@ -107,6 +107,8 @@
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
+                    <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
+                    <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                 </div>
                 <div class="mot_hang">
                     <span class="hang">B</span>
@@ -122,204 +124,28 @@
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
+                    <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
+                    <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                 </div>
-                <div class="mot_hang">
-                    <span class="hang">C</span>
+
+
+                @foreach($hang as $value)
+                <div class=" mot_hang">
+                    <span class="hang">{{$value->ten_hangghe}}</span>
+                    @foreach($soghe as $val)
                     <span class="choose">
-                        <span class="numbercode" id="hangCghe1">1</span>
+                        <span class="numbercode">{{$val->soghe}}</span>
                     </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe2">2</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe3">3</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe4">4</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe5">5</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe6">6</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe7">7</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe8">8</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe9">9</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe10">10</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe11">11</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangCghe12">12</span>
-                    </span>
+                    @endforeach
                 </div>
-                <div class="mot_hang">
-                    <span class="hang">D</span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe1">1</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe2">2</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe3">3</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe4">4</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe5">5</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe6">6</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe7">7</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe8">8</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe9">9</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe10">10</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe11">11</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangDghe12">12</span>
-                    </span>
-                </div>
-                <div class="mot_hang">
-                    <span class="hang">E</span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe1">1</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe2">2</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe3">3</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe4">4</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe5">5</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe6">6</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe7">7</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe8">8</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe9">9</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe10">10</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe11">11</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangEghe12">12</span>
-                    </span>
-                </div>
-                <div class="mot_hang">
-                    <span class="hang">F</span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe1">1</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe2">2</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe3">3</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe4">4</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe5">5</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe6">6</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe7">7</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe8">8</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe9">9</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe10">10</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe11">11</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangFghe12">12</span>
-                    </span>
-                </div>
-                <div class="mot_hang">
-                    <span class="hang">G</span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe1">1</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe2">2</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe3">3</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe4">4</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe5">5</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe6">6</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe7">7</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe8">8</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe9">9</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe10">10</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe11">11</span>
-                    </span>
-                    <span class="choose">
-                        <span class="numbercode" id="hangGghe12">12</span>
-                    </span>
-                </div>
+
+                @endforeach
+
+
                 <div class="mot_hang">
                     <span class="hang">H</span>
+                    <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
+                    <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
                     <span class="nochoose"><img src="source/images/ghe/notchoose.png" alt=""></span>
